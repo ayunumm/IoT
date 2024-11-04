@@ -63,8 +63,7 @@ __Uppgift 4.
 
 (in eng)
   Memory management issues
-> >     This is a general term that encompasses any problem related to how memory is allocated, used, and deallocated 
-        in a program.
+> >     This is a general term that encompasses any problem related to how memory is allocated, used, and deallocated in a program.
   1. Memory leaks:
 > >     This occurs when a program allocates memory but fails to deallocate it later, causing the program to consume 
         more and more memory over time, which can eventually lead to a crash.
