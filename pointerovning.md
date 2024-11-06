@@ -48,7 +48,7 @@ __Uppgift 2.
   
 -  Skriv en enkelt exempel som illustrerar hur pekare fungerar i C++:
   
----------->
+----------> https://github.com/ayunumm/IoT/blob/main/pointerovning.cpp
   
 __Uppgift 3.
 
@@ -79,7 +79,7 @@ __Uppgift 4.
        in unpredictable behavior or crashes.
 - Beskriver kort vad dessa problem är genom visa kort C++ kod exempel.
 - 
-  --------->  
+---------->  https://github.com/ayunumm/IoT/blob/main/pointerovning.cpp
 
 (in se)
 
@@ -198,7 +198,7 @@ __Upggift 6.
 
   - Skriver en smart pointer klass utan att använda template. Denna smart pointer klass jobba med data type int pointer.
   - 
-  ------------->
+----------> https://github.com/ayunumm/IoT/blob/main/pointerovning2ease.cpp
   
         "Implementing a smart pointer without templates is possible, though templates are often used to make smart pointers 
           more flexible. Without templates, the smart pointer would have to work with a specific type (e.g., int or MyClass). 
@@ -207,4 +207,71 @@ __Upggift 6.
 __Uppgift 7. 
 
   - Hitta ett eller fler verktyg som hjälpa felsökning av C++ minne lackage.
-    -----------> https://pythontutor.com/cpp.html#mode=edit
+  - 
+
+- Valgrind
+Plattform: Linux, macOS
+Funktioner:
+Identifierar , dubbelfrieringar, användning av oinitierad minne och andra minnesrelaterade fel.
+Ger detaljerad information om var felet uppstår.
+Kan användas för att analysera hela program eller enskilda funktioner.
+Fördelar:
+Mycket populärt och väl etablerat.
+Gratis och open source.
+Nackdelar:
+Kan vara långsamt för stora program.
+
+- AddressSanitizer (ASan)
+Plattform: Linux, macOS, Windows
+Funktioner:
+Integrerad i GCC och Clang.
+Upptäcker många typer av minnesfel, inklusive minnesläckor, användning av oinitierad minne och buffer overflows.
+Ger snabb feedback.
+Fördelar:
+Snabb och enkel att använda.
+Integrerad i många moderna kompilatorer.
+Nackdelar:
+Kan ge falska positiva resultat i vissa fall.
+
+- LeakSanitizer (LSan)
+Plattform: Linux, macOS, Windows
+Funktioner:
+Specialiserat på att hitta minnesläckor.
+Ger detaljerad information om var minnet allokeras och inte friges.
+Fördelar:
+Mycket effektiv för att hitta minnesläckor.
+Integrerad i många moderna kompilatorer.
+Nackdelar:
+Kan ge falska positiva resultat i vissa fall.
+
+-Visual Studio Memory Analyzer
+Plattform: Windows
+Funktioner:
+Integrerad i Visual Studio.
+Ger visuell representation av minnesanvändning.
+Kan ta snapshots av minnesanvändningen vid olika tidpunkter.
+Fördelar:
+Lätt att använda för Visual Studio-användare.
+Nackdelar:
+Begränsad till Visual Studio-miljön.
+
+Other Tools
+- GDB: En kraftfull debugger som kan användas för att manuellt inspektera minnesanvändningen.
+- Purify: Ett kommersiellt verktyg som erbjuder omfattande minnesfelsökning.
+- Dr. Memory: Ett open source-verktyg som fokuserar på att hitta minnesfel i Windows-program.
+- Tips för att använda verktygen effektivt
+- Minimalisera testfallet: Försök att isolera det problemområde där minnesläckan uppstår för att underlätta felsökningen.
+Använd rätt verktyg: Välj ett verktyg som passar för din plattform och dina behov.
+
+Tolka resultaten noggrant: Verktygen kan ge många detaljer, så det är viktigt att kunna tolka resultaten korrekt.
+Kolla efter falska positiva: Ibland kan verktygen rapportera fel som inte är riktiga minnesläckor.
+Kombinera flera verktyg: Att använda flera verktyg kan ge en mer komplett bild av problemet.
+Val av verktyg beror på flera faktorer:
+
+Plattform: Vilket operativsystem använder du?
+Kompilator: Vilken kompilator använder du (GCC, Clang, Visual Studio)?
+Programmets storlek och komplexitet: Större program kan kräva mer avancerade verktyg.
+Dina preferenser: Vissa verktyg är mer användarvänliga än andra.
+
+Sammanfattningsvis:
+Genom att använda rätt verktyg och följa goda felsökningsmetoder kan du effektivt hitta och åtgärda minnesläckor i dina C++-program.
