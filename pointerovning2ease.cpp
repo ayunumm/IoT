@@ -1,4 +1,4 @@
-//pointerovning upgf4
+//pointerovning upgf6
 #include <iostream>
 
 class SmartIntPtr {
