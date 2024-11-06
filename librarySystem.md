@@ -46,6 +46,7 @@ Systemet ska använda sig av OOP-koncept som arv, polymorfism, och inkapsling. U
         list_items(): Visa en lista över alla objekt i biblioteket.
         list_available_items(): Visa en lista över alla tillgängliga objekt som inte är lånade.
 5. Skriver huvud program som visa ovanför klasser använder tillsammans
+
     Extra info
         str - använda C++ string klass
         lista - använda C++ vector klass
