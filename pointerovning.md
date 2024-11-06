@@ -41,17 +41,21 @@ __Uppgift 2.
 
 (In eng)
   >> Fundamental concepts of pointers in C/C++
->  > 
+
     Declaration: A pointer is declared using the * operator.
     Initialization: A pointer is initialized with the address of a variable using the & operator.
     Dereferencing: The * operator is used to access the value stored at the memory address the pointer points to.
   
 -  Skriv en enkelt exempel som illustrerar hur pekare fungerar i C++:
   
+---------->
+  
 __Uppgift 3.
 
   Vad heter den online verktyg som du köra din C++ program och visa programmet dynamiska minne ?  
   Prov köra program i uppgift 2 
+
+----------> https://pythontutor.com/cpp.html#mode=edit
 
 
 __Uppgift 4.
@@ -74,6 +78,54 @@ __Uppgift 4.
 > >     A dangling pointer points to a memory location that has been deallocated. Using a dangling pointer can result
        in unpredictable behavior or crashes.
 - Beskriver kort vad dessa problem är genom visa kort C++ kod exempel.
+- 
+  --------->  
+
+(in se)
+
+    C++におけるメモリ管理の問題点とその説明
+    C++では、プログラマーがメモリを明示的に管理する必要があるため、メモリ管理に関する問題がしばしば発生します。以下に、代表的な3つの問題とその説明を詳しく解説します。
+    
+    1. メモリリーク（Memory Leak）
+    定義: 動的に確保されたメモリが、不要になった後も解放されずに残ってしまう状態。
+    原因:
+    new で確保したメモリに対して、対応する delete を忘れる。
+    例外が発生した際に、メモリが解放されない。
+    プログラムのロジック上のミスで、メモリを解放するタイミングを逃す。
+    影響:
+    プログラムが長時間実行されると、利用可能なメモリが枯渇し、プログラムがクラッシュしたり、パフォーマンスが低下したりする。
+    2. ダブルフリー（Double Free）
+    定義: 既に解放されたメモリを再度解放しようとする状態。
+    原因:
+    同じメモリ領域に対して、delete を複数回実行する。
+    ポインターの誤った操作により、意図せず同じメモリ領域を複数回解放してしまう。
+    影響:
+    プログラムがクラッシュしたり、予期せぬ動作をしたりする。
+    3. ダングリングポインター（Dangling Pointer）
+    定義: 解放されたメモリ領域を指し示すポインター。
+    原因:
+    delete でメモリを解放した後も、そのメモリ領域を指し示すポインターを使い続ける。
+    ポインターが、有効な範囲外を指すようになる。
+    影響:
+    解放されたメモリ領域にアクセスしようとした際に、プログラムがクラッシュしたり、不正なデータが書き込まれたりする。
+    メモリ管理問題を避けるための対策
+    スマートポインターの利用: std::unique_ptr, std::shared_ptr などのスマートポインターは、スコープを抜けると自動的にメモリを解放してくれるため、メモリリークを防ぐことができます。
+    RAII（Resource Acquisition Is Initialization） の原則を守る: リソース（メモリなど）の取得と解放を、オブジェクトの構築と破棄に結びつけることで、メモリ管理のミスを減らすことができます。
+    デバッガの活用: メモリリーク検出ツールやデバッガを使って、プログラム実行中のメモリ状態を監視し、問題を早期に発見することができます。
+    コーディング規約の遵守: チームで統一されたコーディング規約を設け、メモリ管理に関するルールを明確にすることで、ミスの発生を減らすことができます。
+    まとめ
+    
+    C++のメモリ管理は、プログラマーの責任で行う必要があります。メモリ管理の問題は、プログラムの安定性と信頼性に大きく影響するため、これらの問題を理解し、適切な対策を講じることが重要です。スマートポインターの利用や、RAIIの原則を守るなど、効果的なメモリ管理手法を習得することで、より安全で高品質なC++プログラムを作成することができます。
+    
+    さらに詳しく知りたい場合は、以下のキーワードで検索してみてください。
+    
+    C++ メモリ管理
+    スマートポインター
+    RAII
+    メモリリーク
+    ダブルフリー
+    ダングリングポインター
+    何か他に質問があれば、お気軽にご質問ください。
 
 __Uppgift 5.
   Vad är smart pointers och vilka problem löser den.
@@ -145,13 +197,14 @@ __Uppgift 5.
 __Upggift 6.
 
   - Skriver en smart pointer klass utan att använda template. Denna smart pointer klass jobba med data type int pointer.
+  - 
+  ------------->
   
-  - "Implementing a smart pointer without templates is possible, though templates are often used to make smart pointers 
-    more flexible. Without templates, the smart pointer would have to work with a specific type (e.g., int or MyClass). 
-  
-  - Let’s create a smart pointer that manages an int:"
+        "Implementing a smart pointer without templates is possible, though templates are often used to make smart pointers 
+          more flexible. Without templates, the smart pointer would have to work with a specific type (e.g., int or MyClass). 
+         Let’s create a smart pointer that manages an int:"
 
 __Uppgift 7. 
 
   - Hitta ett eller fler verktyg som hjälpa felsökning av C++ minne lackage.
-    >> https://pythontutor.com/cpp.html#mode=edit
+    -----------> https://pythontutor.com/cpp.html#mode=edit
