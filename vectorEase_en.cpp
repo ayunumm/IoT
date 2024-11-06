@@ -28,6 +28,9 @@ int main() {
         empty(): Checks if the vector is empty.
         clear(): Removes all elements.
         begin() and end(): Returns iterators to the beginning and end of the vector, respectively.
+        erase():
+        return_item(): 
+        
 
 - Advantages over arrays:
         No need for manual memory management: Vectors handle memory allocation and deallocation automatically.
