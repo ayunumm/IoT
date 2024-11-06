@@ -154,3 +154,4 @@ __Upggift 6.
 __Uppgift 7. 
 
   - Hitta ett eller fler verktyg som hjälpa felsökning av C++ minne lackage.
+    >> https://pythontutor.com/cpp.html#mode=edit
