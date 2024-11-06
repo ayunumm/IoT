@@ -48,7 +48,8 @@ class Magazine : public Item {
             std::cout << "Issue: " << issueNr << std::endl;
         }
 };
-    
+
+// 3.
 class LibraryUser {
     public:
         std::string name;
@@ -79,6 +80,7 @@ class LibraryUser {
         }
 };    
 
+// 4.
 class Library {
     public:
         std::vector<Item*> items; // List of available items in the library (books and magazines)
