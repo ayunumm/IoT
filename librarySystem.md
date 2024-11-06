@@ -1,7 +1,6 @@
 Date: 2024-11-06 ons
 
-(se) ========================================================================================================
-
+(se) ============================================================================
 Bibliotek system
 
 ____Uppgift: 
@@ -55,7 +54,7 @@ Extra krav (för extra utmaning):
     Implementera en metod i Library som skriver ut en sammanfattning över vilka objekt som är lånade och av vem.
 
 
-(eng) ========================================================================================================
+(eng) ============================================================================
 
 Library System
 
@@ -111,7 +110,7 @@ The system should utilize OOP concepts such as inheritance, polymorphism, and en
     Implement a method in Library that prints a summary of which items are borrowed and by whom.
 
 
-(jp) ========================================================================================================
+(jp) ============================================================================
 
 
 課題:
