@@ -15,9 +15,12 @@ sudo apt upgrade: インストール済みのパッケージを最新バージ�
 sudo apt install パッケージ名: パッケージをインストールします。
 
 
+
 mkdir = make a folda
 nano filename =
+micro filname
 rm filename = remove
+
 ________________________________
 
 g++ -E file.cpp -o file.i = make an i file
