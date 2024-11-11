@@ -48,7 +48,9 @@ https://en.cppreference.com/w/cpp/header/cstdio
 
 http://www.cplusplus.com/reference/cstdio
 
-(en)===================================================================================================================================================================
+
+
+(en)================================================================================
 
 Strömmar och filer
 Studera
@@ -60,43 +62,53 @@ https://www.youtube.com/watch?v=K7Pi0jGnyqw
 
 https://www.programiz.com/cpp-programming/library-function/cstdio/fopen
 
+Prompt:
+1. How to open a text file in C++ and count the number of characters and lines in the file.
+      To perform this task in C++ without using <fstream>, you can consider using the standard C I/O functions included in the C++               standard library. Specifically, the <cstdio> header file in C++ provides standard C-style functions like fopen(), fgets(), and             fgetc(). These functions can be used to open, read, and count the lines and characters in a text file.
 
-1. Hur öppna man en text fil med C++ och räknar antal tecken och antal rader som finn i filen.
+How to proceed:
+      Include the <cstdio> header: This header file contains the definitions of functions for file operations similar to C's I/O functions.
+      Functions to use:
+      fopen(): Opens a file and returns a pointer to a FILE object.
+      fgets(): Reads a line from the file.
+      fgetc(): Reads individual characters.
+      fclose(): Closes the file.
+      These functions are effective for reading files and are often used when you want to avoid C++'s high-level abstractions for file I/O.
 
-För att utföra din uppgift i C++ utan att använda `<fstream>`, kan du titta på att använda C-standardens I/O-funktioner som ingår i C++ standardbiblioteket. 
-Specifikt tillhandahåller `<cstdio>`-huvudfilen i C++ standard C-stilsfunktioner som `fopen()`, `fgets()`, och `fgetc()`. Dessa funktioner kan användas för att öppna, läsa och räkna raderna och tecknen i en textfil.
+Summary:
+      To solve your task, you can use the following approach:
+      
+      Use <cstdio> for functions like fopen(), fgets(), and fgetc() to open and read a file.
+      Iterate through the lines and characters to count them.
+      Solve the same problem using fstream instead.
+      Where to find documentation:
+      For official documentation on C++ standard library functions, including <cstdio> for handling C-style file I/O, you can refer to the following sources:
 
-### Så här kan du gå vidare:
+cppreference.com: This is an excellent and detailed resource for both C++ and C standard libraries.
+cplusplus.com: Another good reference that offers easy-to-understand examples and detailed descriptions of functions found in the C++ standard library.
 
-1. **Inkludera `<cstdio>`-biblioteket**: Denna huvudfil innehåller definitionerna av funktioner för filoperationer liknande C:s I/O-funktioner.
+Explanation:
+      The provided text is a C++ programming tutorial that explains how to perform basic file I/O operations, specifically counting the number of characters and lines in a text file.
 
-2. **Funktioner att använda**:
-   - `fopen()`: Öppnar en fil och returnerar en pekare till `FILE`-objektet.
-   - `fgets()`: Läser en rad från filen.
-   - `fgetc()`: Läser individuella tecken.
-   - `fclose()`: Stänger filen.
+Key points covered:
 
-   Dessa funktioner är effektiva för att läsa filer och används ofta när man vill undvika C++:s högnivåabstraktioner för fil-I/O.
+Using cstdio header: This header provides functions like fopen, fgets, and fgetc for working with files in a C-like manner.
+fopen function: Opens a file and returns a file pointer.
+fgets function: Reads a line from the file.
+fgetc function: Reads a single character from the file.
+fclose function: Closes the file.
+Counting characters and lines: Iterates through the file, counting characters and lines.
+Alternative using fstream: Suggests using the fstream class for a more object-oriented approach to file I/O in C++.
+Documentation references: Provides links to cppreference.com and cplusplus.com for more detailed information on C++ standard library functions.
 
-### Sammanfattning:
-För att lösa din uppgift kan du använda följande tillvägagångssätt:
-- Använd `<cstdio>` för funktioner som `fopen()`, `fgets()`, och `fgetc()` för att öppna och läsa en fil.
-- Iterera genom raderna och tecknen för att räkna dem.
+In essence, the text guides the reader on how to:
 
+      Open a text file.
+      Read the contents of the file character by character or line by line.
+      Count the number of characters and lines.
+      Close the file.
+      It also suggests an alternative approach using fstream for those who prefer a more object-oriented style.
 
-2. Lösa samma problem med fstream istället.
-
-
-Var man hittar dokumentation:
-För officiell dokumentation om C++ standardbiblioteksfunktioner, inklusive `<cstdio>` för att hantera fil-I/O på C-stil, kan du referera till följande källor:
-
-1. **cppreference.com**: Detta är en utmärkt och detaljerad resurs för både C++- och C-standardbibliotek.
-
-https://en.cppreference.com/w/cpp/header/cstdio
-
-2. **cplusplus.com**: En annan bra referens som erbjuder lättförståeliga exempel och detaljerade beskrivningar av funktioner som finns i C++ standardbibliotek.
-
-http://www.cplusplus.com/reference/cstdio
 
 (jp) ===================================================================================================================================================================
 
