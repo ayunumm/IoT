@@ -7,7 +7,7 @@ chmod +x myprogram
 ./myprogram
 
 
-pwd = 
+pwd = crrent location
 
 
 ls = 
