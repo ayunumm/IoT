@@ -1,3 +1,12 @@
+// ArrowKeyの実装で使った
+# コンパイル
+g++ main.cpp -o myprogram
+# 実行権限を与える
+chmod +x myprogram
+# 実行
+./myprogram
+
+
 pwd = 
 
 
